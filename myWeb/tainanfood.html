@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>台南網頁</title>    
+  </head>
+  <body style="padding-top:50px">
+    <div>
+	<h1>我的旅遊暨美食之旅網站介紹</h1><br>
+	</div>
+     <!-- 導覽列 -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+	  <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">我的旅遊暨美食之旅日記</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">美食</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="taichungfood.html">台中</a>
+                <a class="dropdown-item" href="tainanfood.html">台南</a>
+				<a class="dropdown-item" href="blog.html">美食部落</a>
+              </div>
+            </li>
+			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">旅遊</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">日本</a>
+                <a class="dropdown-item" href="#">泰國</a>
+				<a class="dropdown-item" href="Israel.html">以色列</a>
+				
+            </li>
+			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="myform.html">意見填寫</a>
+            </li>
+          </ul>
+		  <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="輸入景點">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>  
+        </div>		
+      </div>
+    </nav>
+
+    <!-- 內容區 -->
+    <main>	
+      <div class="container">
+	    <h1 class="text-center mt-5">台南美食</h1>
+		
+	    <!-- 圖片輪播 -->
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+		  <!-- 輪播指示 -->
+		  <ol class="carousel-indicators">
+			<li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+		  </ol>
+		  <!-- 輪播內容 -->
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <img src="tainan\fig1.jpg" class="d-block w-100" alt="真善美湖區">
+			  <div class="carousel-caption d-none d-md-block">
+				<h5>復盛號碗糕</h5>
+			  </div>
+			</div>
+			<div class="carousel-item">
+			  <img src="tainan\fig2.jpg" class="d-block w-100" alt="熊布朗宮">
+			  <div class="carousel-caption d-none d-md-block">
+				<h5>豆花</h5>
+			  </div>
+			</div>
+			<div class="carousel-item">
+			  <img src="tainan\fig3.jpg" class="d-block w-100" alt="雪的美術館">
+			  <div class="carousel-caption d-none d-md-block">
+				<h5>炸雞</h5>
+			  </div>
+			</div>
+		  </div>
+		  <!-- 輪播控制 -->
+		  <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+			<span class="visually-hidden">Previous</span></a>
+		  <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon"></span>
+			<span class="visually-hidden">Next</span></a>
+		</div>
+
+	  </div>
+	</main>
+	
+    <!-- 頁尾 -->
+	<footer>
+	  <div class="container">
+	    <hr>              
+        <p>&copy; 2021日光多媒體&middot;<a href="#">隱私權政策</a>&middot;<a href="#">服務條款</a></p>
+		<p class="text-end"><a href="#">Back to top</a></p>
+      </div>
+    </footer> 	
+  </body>
+</html>

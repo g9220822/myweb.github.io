@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>台中網頁</title>    
+  </head>
+  <body style="padding-top:50px">
+     <!-- 導覽列 -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+	  <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">我的旅遊暨美食之旅日記</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">美食</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="taichungfood.html">台中</a>
+                <a class="dropdown-item" href="tainanfood.html">台南</a>
+				<a class="dropdown-item" href="blog.html">美食部落</a>
+              </div>
+            </li>
+			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">旅遊</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">日本</a>
+                <a class="dropdown-item" href="#">泰國</a>
+				<a class="dropdown-item" href="Israel.html">以色列</a>
+				
+            </li>
+			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="myform.html">意見填寫</a>
+            </li>
+          </ul>
+		  <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="輸入景點">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>  
+        </div>		
+      </div>
+    </nav>
+
+    <!-- 內容區 -->
+    <main>	
+      <div class="container">
+	    <h1 class="text-center mt-5">台中美食</h1>
+		
+	    <!-- 第一個景點 -->
+	    <hr>
+        <div class="row">
+          <div class="col-md-7">
+            <h2>逢甲<small>（位於台中西屯區）</small></h2>
+            <p>
+		  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseContent">
+			逢甲－美食介紹</a>
+		  
+			</p>
+		<div class="collapse" id="collapseContent">
+		  <div class="card card-body">
+			逢甲是台中知名的美食景點，位於逢甲大學旁。
+		  </div>
+		</div>
+          </div>
+          <div class="col-md-5">
+            <img src="taichung\feng.jpg" class="img-fluid">
+          </div>
+        </div>	
+		
+        <!-- 第二個景點 -->
+        <hr>
+        <div class="row">
+          <div class="col-md-7 order-md-5">
+		    <h2>公益路<small>(位於台中中區與西南屯區)</small></h2>
+            <p class="lead">死海是世界上地勢最低的湖泊，湖面海拔負424米，水源為約旦河。</p>
+		    <p>湖長67公里，寬18公里，面積810平方公里。湖水鹽度極高，越到湖底越高。一般海水含鹽量為3.5%，而死海的含鹽量在23%至30%左右。目前死海水位平均每年下降1米，原因是注入死海的約旦河水由於農業灌溉從過去每年13億立方米減少到目前3000萬立方米。</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="taichung\fig2.jpg" class="img-fluid">
+          </div>
+        </div>
+		
+	    <!-- 第三個景點 -->
+	    <hr>
+        <div class="row">
+          <div class="col-md-7">
+            <h2>特拉維夫<small>（位於以色列）</small></h2>
+            <p class="lead">特拉維夫是以色列的第二大城市，也是公認的以色列首都，人口主要為猶太人，阿拉伯人則占總人口的4%。</p>
+		    <p>特拉維夫濱臨東地中海，市區面積51.76平方公里。根據統計，有三百多萬人口，是以色列人口最稠密的地帶，也是以色列的經濟樞紐。特拉維夫已經逐漸成為世界級的城市，並被列為中東生活費用最昂貴的大城市之一。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="Israel\Israel3.jpg" class="img-fluid">
+          </div>
+        </div>	  
+	  </div>
+	</main>
+	
+    <!-- 頁尾 -->
+	<footer>
+	  <div class="container">
+	    <hr>              
+        <p>&copy; 2021日光多媒體&middot;<a href="#">隱私權政策</a>&middot;<a href="#">服務條款</a></p>
+		<p class="text-end"><a href="#">Back to top</a></p>
+      </div>
+    </footer> 	
+  </body>
+</html>
